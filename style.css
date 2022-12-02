@@ -1,27 +1,21 @@
-.h-div{
-    box-sizing: border-box;
-    border: 2px solid black;
-    padding: 10px;
-    width: 384px;
-    
-}
 
-
-.v-div{
-    box-sizing: border-box;
-    border: 2px solid black;
-    
-    height: 384px;
-    padding: 10px;
-}
-
-#vertical{
+#table{
     display: flex;
-    position: absolute;
-    top: 9px; left: 9px;
     
-    
+    flex-wrap: wrap;
+    margin: 200px;
+  
+}
+.abhi{
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+}
 
+#table:hover{
+    background-color: burlywood;
 }
 
 

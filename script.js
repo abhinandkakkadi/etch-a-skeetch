@@ -1,17 +1,27 @@
 
 
-for(let i=0; i< 16; i++)
-{
-    var div = document.createElement("div");
-    div.classList.add("h-div")
-    document.getElementById("horizontal").appendChild(div)
-     
+ function grid(length)
+ {   document.getElementById('table').style.width = length*24 + "px";
+    for(let j=0; j<length*length;j++)
+    {   
+        
+        const box = document.createElement('div');
+        box.classList = "abhi";
+        document.getElementById('table').appendChild(box);
+
+    }
 }
 
 
-for(let i=0; i<16; i++)
-{
-    var div = document.createElement("div");
-    div.classList.add("v-div")
-    document.getElementById("vertical").appendChild(div);
-}
+    function promptMe()
+    {   
+        let length = prompt("Enter grid size");
+        grid(length);
+    }
+    
+    function stop()
+    {
+        location.reload();
+
+    }
+    
